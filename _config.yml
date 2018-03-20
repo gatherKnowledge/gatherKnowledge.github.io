@@ -1,0 +1,27 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            "Moonko the developer"
+tagline:          'A Jekyll theme'
+description:      'For communication'
+baseurl:          /
+
+author:
+    name: Moonko
+    email: gathering1143@gmail.com
+    github: gatherKnowledge
+    bio: "Organizing room of Moonko \n the developer"
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/poole/hyde
