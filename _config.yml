@@ -5,7 +5,7 @@ highlighter:      pygments
 # Setup
 title:            "Moonko the developer"
 tagline:          'A Jekyll theme'
-description:      'For communication'
+description:      '더 발전하는 삶을 위하여'
 baseurl:          /
 
 author:
@@ -14,10 +14,6 @@ author:
     github: gatherKnowledge
     bio: "Organizing room of Moonko \n the developer"
 
-paginate:         5
-
-# Custom vars
-version:          2.1.0
-
+paginate:         1
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/gatherKnowledge
