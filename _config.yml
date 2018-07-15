@@ -4,7 +4,7 @@ highlighter:      pygments
 
 # Setup
 title:            "Moonko the developer"
-tagline:          'A Jekyll theme'
+tagline:          'pro'
 description:      '더 발전하는 삶을 위하여'
 baseurl:          https://gatherknowledge.github.io
 
@@ -14,6 +14,6 @@ author:
     github: gatherKnowledge
     bio: "Organizing room of Moonko \n the developer"
 
-paginate:         1
+paginate:         3
 github:
   repo:           https://github.com/gatherKnowledge
