@@ -1,6 +1,7 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      rouge
+# no support
+# markdown:         redcarpet
+# highlighter:      rouge
 
 # Setup
 title:            "Moonko the developer"
