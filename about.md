@@ -2,29 +2,11 @@
 layout: page
 title: About
 ---
+ 인생에서 가장 빛나는 순간은 무언가에 몰입하는 순간이 아닌가 싶습니다. 그런 순간이 저에게는 개발자로서 지내는 시간들이라고 생각합니다. 그리고 이런 나를 먼 훗날 과거를 되돌아봤을 때 찬란히 빛났던 기억을 되뇌이고 싶습니다.
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+### 음악
+  장르는 가리지 않고, 최근에는 돌고 돌아 최근에는 80년~90년대 노래를 듣고 있습니다. 비처럼 음악처럼, 내사랑 내곁에 등.. 아버지께서 좋아하시던 故김현식님의 음악을 이제는 저도 특히나 좋아하게 됐고, 요즘에는 역시 고인이되신 故 신해철님의 음악을 즐겨듣고 있습니다. 
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+### 프로그래밍 언어
+ 자바를 물론 좋아하고 메인으로 사용하는 언어이지만, 최근에는 자바보다 자바스크립트에 더 많은 관심을 두고 공부하고 있습니다. 최근에는 워낙 nodejs등과 같은 자바스크립트를 사용할 수 있는 플랫폼, 프레임워크들이 많이 생겨 자바스크립트 제약을 벗어날 수 있기 때문에 관심을 가지게 됐습니다.
 
-There are currently two themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
