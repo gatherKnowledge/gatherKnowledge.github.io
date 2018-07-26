@@ -3,6 +3,50 @@ layout: default
 ---
 <!-- 1개씩 볼 때 -->
 <div class="post">
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script>
+      // 사용할 앱의 JavaScript 키를 설정해 주세요.
+      Kakao.init('fa1b326e42b8484f0a4a7a1a1bbe30e4');
+
+      // kakaotalk 링크
+      Kakao.Link.createDefaultButton({
+        container: '#kakao-link-btn',
+        objectType: 'location',
+        address: '경기 성남시 분당구 판교역로 235 에이치스퀘어 N동 8층',
+        addressTitle: '카카오 판교오피스 카페톡',
+        content: {
+          title: '신메뉴 출시♥︎ 체리블라썸라떼',
+          description: '이번 주는 체리블라썸라떼 1+1',
+          imageUrl: 'http://mud-kage.kakao.co.kr/dn/bSbH9w/btqgegaEDfW/vD9KKV0hEintg6bZT4v4WK/kakaolink40_original.png',
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com'
+          }
+        },
+        social: {
+          likeCount: 286,
+          commentCount: 45,
+          sharedCount: 845
+        },
+        buttons: [
+          {
+            title: '웹으로 보기',
+            link: {
+              mobileWebUrl: 'https://developers.kakao.com',
+              webUrl: 'https://developers.kakao.com'
+            }
+          }
+        ]
+      });
+
+      // 스토리 공유 버튼을 생성합니다.
+      Kakao.Story.createShareButton({
+        container: '#kakaostory-share-button',
+        url: 'https://developers.kakao.com',
+        text: '카카오 개발자 사이트로 놀러오세요! #개발자 #카카오 :)'
+      });
+      //]]>
+    </script>
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
@@ -27,51 +71,5 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-  <script type='text/javascript'>
-    //<![CDATA[
-      // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-      Kakao.init('fa1b326e42b8484f0a4a7a1a1bbe30e4');
-      // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-      Kakao.Link.createDefaultButton({
-        container: '#kakao-link-btn',
-        objectType: 'feed',
-        content: {
-          title: '딸기 치즈 케익',
-          description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
-          imageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-          link: {
-            mobileWebUrl: 'https://gatherknowledge.github.io',
-            webUrl: 'https://gatherknowledge.github.io'
-          }
-        },
-        social: {
-          likeCount: 286,
-          commentCount: 45,
-          sharedCount: 845
-        },
-        buttons: [
-          {
-            title: '웹으로 보기',
-            link: {
-              mobileWebUrl: 'https://gatherknowledge.github.io',
-              webUrl: 'https://gatherknowledge.github.io'
-            }
-          },
-          {
-            title: '앱으로 보기',
-            link: {
-              mobileWebUrl: 'https://gatherknowledge.github.io',
-              webUrl: 'https://gatherknowledge.github.io'
-            }
-          }
-        ]
-      });
-    //]]>
-      Kakao.Story.createShareButton({
-          container: '#kakaostory-share-button',
-          url: 'https://gatherknowledge.github.io',
-          text: 'moonko의 개발공간'
-        });
-  </script>
+
 </div>
