@@ -1,70 +1,12 @@
 <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
-  <!-- tracking start-->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98277093-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-98277093-1');
-  </script>
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NQZZ322');
-  </script>
-  <!-- End Google Tag Manager -->  
-  <!-- tracking end-->
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/custom.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/hyde.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
-
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-144-precomposed.png">
-                                 <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-  <script type="application/ld+json">
-    {
-     "@context": "http://schema.org",
-     "@type": "Person",
-     "name": "Pinplay",
-     "url": "https://www.pinplay.co.kr",
-     "sameAs": [
-       "https://www.facebook.com/pinplaykakaocompany",
-       "https://www.instagram.com/pinplay.kakao/",
-       "https://blog.naver.com/kakaokids-pinplay",
-       "https://blog.naver.com/kiwiwatch"
-     ]
-    }
-  </script>
-  <!-- og start -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Pinplay">
-  <meta property="og:description" content="카카오와 함께하는 통신사, 핀플레이! 아이를 위한 특수단말부터 모두를 위한 통신 서비스까지 고객을 위한 차별화된 서비스를 제공합니다.">
-  <meta property="og:image" content="https://d1bapo399uxq86.cloudfront.net/dev/webresource/icon/site-main-logo.jpeg">
-  <meta property="og:url" content="https://www.pinplay.co.kr">
-  <!-- og end -->
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>
