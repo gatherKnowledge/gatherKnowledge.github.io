@@ -2,19 +2,22 @@
 layout: default
 ---
 
-
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
+<div class="home">
+  
+  
+ <div class="col col-12">
+      <div class="col col-3">
+          <div class="block glass"  style="background-image:url(assets/avatar.jpg)">      
+          </div>
+      </div>
+      <div class="col col-9">
+        <div class="block glass">
+            <div class="block-body">
+                <h2>Yo, I'm Dude Labouwski</h2>
+                <p class="grey-text">Aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores ausLorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus</p>
+            </div>
+        </div>
+      </div>  
   </div>
   <div class="col col-12">
     {% for port in site.data.portfolio %}
@@ -47,13 +50,12 @@ layout: default
     <div class="col col-3">
         <div class="block glass">
             <div class="block-body">
-                <h3 class="margin-bot">Skills</h3>
+                <h3 class="margin-bot">Skills</h3>                
                 {% for skill in site.data.skills %}
-                  <span class="post-meta white-text">{{skill.descr}}</span>
-                  <div class="progress margin-bot"><div class="progress-{{skill.xp}}"></div></div>                
+                <span class="post-meta white-text">{{skill.descr}}</span>
+                <div class="progress margin-bot"><div class="progress-{{skill.xp}}"></div></div>                
                 {% endfor %}
             </div>
         </div>
     </div>
-  {% endfor %}
 </div>
