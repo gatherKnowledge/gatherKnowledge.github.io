@@ -29,6 +29,6 @@ comments: true
 ```
 ---
 title: 나의개발
-name: moonko
+name: ekul
 ---
 ```
