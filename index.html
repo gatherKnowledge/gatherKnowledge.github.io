@@ -1,61 +1,26 @@
 ---
 layout: default
+title: Long Haul
 ---
 
-<div class="home">
-  
-  
-  <!-- <div class="col col-12">
-        <div class="col col-2">
-            <div class="block glass"  style="background-image:url(assets/avatar.png)">      
-            </div>
-        </div>
-        <div class="col col-10">
-          <div class="block glass">
-              <div class="block-body">
-                  <h2>hello world</h2>
-                  <p class="grey-text">^^</p>
-              </div>
-          </div>
-        </div>  
-  </div> -->
-  <div class="col col-12">
-    {% for port in site.data.portfolio %}
-      <div class="col col-{{port.width}}">
-        <div class="block" style="background-image:url(assets/{{port.img}})">
-            <div class="block-body height-{{port.height}}">              
-                <h2 class="align-bottom-right">
-                  {{ port.title }}
-                </h2>
-            </div>
-        </div>
-      </div>
+<div class="home" id="home">
+  <h1 class="pageTitle">Recent Posts</h1>
+  <ul class="posts noList">
+    {% for post in paginator.posts %}
+      <li>
+        <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html }}{% endif %}</p>
+      </li>
     {% endfor %}
-    </div>
-  <div class="col col-9">
-    {% for post in site.posts %}
-      <div class="col col-{{post.width}}">
-        <div class="block {{post.color}}">
-            <div class="block-body height-{{post.height}}">
-                <span class="post-meta white-text">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-                <h2>
-                  <a class="post-link white-text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
-            </div>
-        </div>
-      </div>
-    {% endfor %}
-    </div>
-    <div class="col col-3">
-        <div class="block glass">
-            <div class="block-body">
-                <h3 class="margin-bot">Skills</h3>                
-                {% for skill in site.data.skills %}
-                <span class="post-meta white-text">{{skill.descr}}</span>
-                <div class="progress margin-bot"><div class="progress-{{skill.xp}}"></div></div>                
-                {% endfor %}
-            </div>
-        </div>
-    </div>
+  </ul>
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous button__outline">Newer Posts</a> 
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next button__outline">Older Posts</a>
+    {% endif %}
+  </div>
 </div>

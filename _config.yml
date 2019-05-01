@@ -1,20 +1,24 @@
-# Dependencies
-# no support
-# markdown:         redcarpet
-# highlighter:      rouge
+title: Moonko the developer
+description: develop, life log.
 
-# Setup
-title:            "Moonko the developer"
-tagline:          'pro'
-description:      '마음의 안식'
-baseurl:          https://gatherknowledge.github.io
+url: https://gatherknowledge.github.io
+baseurl: https://gatherknowledge.github.io
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
 
-author:
-    name: Moonko
-    email: gathering1143@gmail.com
-    github: gatherKnowledge
-    bio: "Organizing room of Moonko \n the developer"
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
 
-paginate:         3
-github:
-  repo:           https://github.com/gatherKnowledge
+navigation:
+  - title: Home
+    url: /index.html
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+
+social:
+  github: https://github.com/gatherknowledge
+  email: gathering1143@gmail.com
