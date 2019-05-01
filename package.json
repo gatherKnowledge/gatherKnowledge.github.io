@@ -1,12 +1,12 @@
 {
-  "name": "long-haul",
-  "version": "0.0.0",
-  "description": "A minimal, type-focused Jekyll theme. ",
+  "name": "Ekul the developer",
+  "version": "1.0.0",
+  "description": "develop, life log.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Brian Maier Jr.",
+  "author": "ekul",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.3",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/brianmaierjr/long-haul.git"
+    "url": "https://github.com/gatherKnowledge/gatherKnowledge.github.io"
   },
   "keywords": [
     "jekyll",
